@@ -79,7 +79,7 @@
                             data-options='{"items": 4}'>
                             <!--Start Features One Single-->
                             @foreach ($kategorihome as $item)
-                                <div class="features-one__single text-center">
+                                <div class="text-center features-one__single">
                                     <div class="features-one__single-inner">
                                         <div class="icon-box">
                                             <img src="{{ $item->picture }}" alt="">
@@ -106,8 +106,7 @@
 
     <!--Start About Two -->
     <section class="about-two">
-        <div class="about-two__bg"
-            style="background-image: url({{ asset('frontend/assets/images/about/gunung.jpg') }});">
+        <div class="about-two__bg" style="background-image: url({{ asset('frontend/assets/images/about/2.jpg') }});">
         </div>
         <div class="container">
             <div class="row">
@@ -115,10 +114,10 @@
                 <div class="col-xl-6">
                     <div class="about-two__img">
                         <div class="about-two__img1">
-                            <img src="{{ asset('frontend/assets/images/about/gunung.jpg') }}" alt="#">
+                            <img src="{{ asset('frontend/assets/images/about/3.jpg') }}" alt="#">
                         </div>
                         <div class="about-two__img2 wow zoomIn" data-wow-delay="100ms" data-wow-duration="3500ms">
-                            <img src="{{ asset('frontend/assets/images/about/about-v2-img2.jpg') }}" alt="#">
+                            <img src="{{ asset('frontend/assets/images/about/4.jpg') }}" alt="#">
                         </div>
                         <div class="counter-box">
                             <h2><span class="odometer" data-count="12">00</span> <span class="plus">+</span>
@@ -138,53 +137,21 @@
                                         src="{{ asset('frontend/assets/images/resources/sec-title-img2.png') }}"
                                         alt="#">
                                 </div>
-                                <h6>Welcome to our garden</h6>
+                                <h6>welcome</h6>
                             </div>
-                            <h2 class="sec-title__title">We Provide Gardening <br> Best Services</h2>
+                            <h2 class="sec-title__title">leave all your<br /> cares to us</h2>
                         </div>
 
                         <div class="about-two__content-text1">
-                            <p>There are many variations of passages of available, but the majority have suffered
-                                alteration in some form, by injected humour, or randomised words which don’t look
-                                even slightly believable.</p>
-                        </div>
-
-                        <div class="about-two__content-text2">
-                            <div class="row">
-                                <div class="col-xl-6 col-lg-6 col-md-6">
-                                    <div class="single-box">
-                                        <div class="icon-box">
-                                            <span class="icon-planting"></span>
-                                        </div>
-                                        <div class="title-box">
-                                            <h3>Soil Marking & <br> Carbo</h3>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-6 col-lg-6 col-md-6">
-                                    <div class="single-box">
-                                        <div class="icon-box">
-                                            <span class="icon-planting"></span>
-                                        </div>
-                                        <div class="title-box">
-                                            <h3>Commercial <br> Planting</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="about-two__content-text3">
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                suffered alteration in some form, by injected humour, or randomised words which
-                                don't look even.</p>
+                            <p>The Wedding Atelier adalah tempat di mana mimpi pernikahan Anda diwujudkan menjadi karya
+                                seni. Dengan sentuhan kreatif dan detail yang personal, kami akan menciptakan perayaan
+                                yang unik dan berkesan.</p>
                         </div>
 
                         <div class="about-two__progress">
                             <div class="about-two__progress-single">
                                 <div class="title">
-                                    <h4>Landscaping Ground</h4>
+                                    <h4>Vendor Management</h4>
                                 </div>
                                 <div class="bar">
                                     <div class="bar-inner count-bar" data-percent="88%">
@@ -195,7 +162,7 @@
 
                             <div class="about-two__progress-single mb0">
                                 <div class="title">
-                                    <h4>Soil Re-bulding</h4>
+                                    <h4>Catering</h4>
                                 </div>
                                 <div class="bar">
                                     <div class="bar-inner count-bar" data-percent="60%">
@@ -213,36 +180,6 @@
     </section>
     <!--End About Two -->
 
-    <!--Start Slogan One -->
-    <section class="slogan-one">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="slogan-one__inner">
-                        <div class="shape1"><img
-                                src="{{ asset('frontend/assets/images/shapes/slogan-v1-shape1.png') }}"
-                                alt="#">
-                        </div>
-                        <div class="slogan-one__bg"
-                            style="background-image: url({{ asset('frontend/assets/images/backgrounds/slogan-v1-bg.png') }});">
-                        </div>
-                        <div class="content-box">
-                            <h2><span>Provides</span> hassle-free backyard <br>
-                                transformations</h2>
-                        </div>
-
-                        <div class="btn-box">
-                            <a class="thm-btn" href="contact.html">
-                                <span class="txt">Get A Quote</span>
-                                <i class="fa fa-angle-double-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End Slogan One -->
 
 
     <!--Start Services Two -->
@@ -253,14 +190,12 @@
         <div class="services-two__bg2"
             style="background-image: url({{ asset('frontend/assets/images/shapes/services-v2-shape2.png') }});">
         </div>
-        <div class="shape1 wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms"><img
-                class="float-bob-y" src="{{ asset('frontend/assets/images/shapes/services-v2-shape3.png') }}"
-                alt="#"></div>
-        <div class="shape2 wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms"><img
-                class="float-bob-y" src="{{ asset('frontend/assets/images/shapes/services-v2-shape4.png') }}"
-                alt="#"></div>
+        <div class="shape1 wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms"><img class="float-bob-y"
+                src="{{ asset('frontend/assets/images/shapes/services-v2-shape3.png') }}" alt="#"></div>
+        <div class="shape2 wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms"><img class="float-bob-y"
+                src="{{ asset('frontend/assets/images/shapes/services-v2-shape4.png') }}" alt="#"></div>
         <div class="container">
-            <div class="sec-title style2 text-center">
+            <div class="text-center sec-title style2">
                 <div class="sec-title__tagline center">
                     <div class="img-box"><img src="{{ asset('frontend/assets/images/resources/sec-title-img.png') }}"
                             alt="#">
@@ -273,7 +208,7 @@
 
             <div class="row">
                 <!--Start Services Two Single-->
-                @foreach ($abouthome as $item)
+                @foreach ($produks as $item)
                     <div class="col-xl-4 col-lg-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="services-two__single">
                             <div class="services-two__single-inner">
@@ -283,7 +218,7 @@
                                             alt="#">
                                     </div>
                                     <div class="icon-box">
-                                        <span class="{{ $item->button }}"></span>
+                                        <span style="color: whitesmoke">{{ $item->kategori }}</span>
                                     </div>
                                 </div>
 
@@ -317,7 +252,6 @@
         </div>
         <div class="container">
             <div class="row">
-
                 <!--Start Projects Two Content-->
                 <div class="col-xl-6">
                     <div class="projects-two__content">
@@ -335,11 +269,11 @@
                         <div class="projects-two__content-text1">
                             <p>There are many variations of passages of available, but the majority
                                 have suffered alteration in some form, by injected randomised
-                                words which don’t look even slightly believable.</p>
+                                words which don't look even slightly believable.</p>
                         </div>
                         <div class="projects-two__content-tab tabs-box">
                             <!--Start Projects Two Tab Button-->
-                            <ul class="tab-buttons clearfix">
+                            <ul class="clearfix tab-buttons">
                                 <li data-tab="#investment" class="tab-btn active-btn">Investment</li>
                                 <li data-tab="#financial" class="tab-btn">Financial</li>
                                 <li data-tab="#landscaping" class="tab-btn">Landscaping</li>
@@ -354,7 +288,7 @@
                                     <div class="projects-two__tabs-content">
                                         <div class="projects-two__tabs-content-img">
                                             <div class="border-box"></div>
-                                            <img src="{{ asset('frontend/assets/images/project/projects-v2-img1.jpg') }}"
+                                            <img src="{{ asset('frontend/assets/images/project/1.jpg') }}"
                                                 alt="#">
                                             <div class="overlay-content">
 
@@ -362,7 +296,7 @@
                                                     <li>
                                                         <div class="inner">
                                                             <div class="text-box">
-                                                                <h4>Private Garden</h4>
+                                                                <h4>Private EO</h4>
                                                                 <p>Assistant</p>
                                                             </div>
 
@@ -375,7 +309,7 @@
                                                     <li>
                                                         <div class="inner">
                                                             <div class="text-box">
-                                                                <h4>Private Garden</h4>
+                                                                <h4>Private EO</h4>
                                                                 <p>Assistant</p>
                                                             </div>
 
@@ -388,7 +322,7 @@
                                                     <li>
                                                         <div class="inner">
                                                             <div class="text-box">
-                                                                <h4>Private Garden</h4>
+                                                                <h4>Private EO</h4>
                                                                 <p>Assistant</p>
                                                             </div>
 
@@ -409,7 +343,7 @@
                                     <div class="projects-two__tabs-content">
                                         <div class="projects-two__tabs-content-img">
                                             <div class="border-box"></div>
-                                            <img src="{{ asset('frontend/assets/images/project/projects-v2-img1.jpg') }}"
+                                            <img src="{{ asset('frontend/assets/images/project/2.jpg') }}"
                                                 alt="#">
                                             <div class="overlay-content">
 
@@ -417,7 +351,7 @@
                                                     <li>
                                                         <div class="inner">
                                                             <div class="text-box">
-                                                                <h4>Private Garden</h4>
+                                                                <h4>Private EO</h4>
                                                                 <p>Assistant</p>
                                                             </div>
 
@@ -430,7 +364,7 @@
                                                     <li>
                                                         <div class="inner">
                                                             <div class="text-box">
-                                                                <h4>Private Garden</h4>
+                                                                <h4>Private EO</h4>
                                                                 <p>Assistant</p>
                                                             </div>
 
@@ -443,7 +377,7 @@
                                                     <li>
                                                         <div class="inner">
                                                             <div class="text-box">
-                                                                <h4>Private Garden</h4>
+                                                                <h4>Private EO</h4>
                                                                 <p>Assistant</p>
                                                             </div>
 
@@ -464,7 +398,7 @@
                                     <div class="projects-two__tabs-content">
                                         <div class="projects-two__tabs-content-img">
                                             <div class="border-box"></div>
-                                            <img src="{{ asset('frontend/assets/images/project/projects-v2-img1.jpg') }}"
+                                            <img src="{{ asset('frontend/assets/images/project/3.jpg') }}"
                                                 alt="#">
                                             <div class="overlay-content">
 
@@ -472,7 +406,7 @@
                                                     <li>
                                                         <div class="inner">
                                                             <div class="text-box">
-                                                                <h4>Private Garden</h4>
+                                                                <h4>Private EO</h4>
                                                                 <p>Assistant</p>
                                                             </div>
 
@@ -485,7 +419,7 @@
                                                     <li>
                                                         <div class="inner">
                                                             <div class="text-box">
-                                                                <h4>Private Garden</h4>
+                                                                <h4>Private EO</h4>
                                                                 <p>Assistant</p>
                                                             </div>
 
@@ -498,7 +432,7 @@
                                                     <li>
                                                         <div class="inner">
                                                             <div class="text-box">
-                                                                <h4>Private Garden</h4>
+                                                                <h4>Private EO</h4>
                                                                 <p>Assistant</p>
                                                             </div>
 
@@ -521,9 +455,9 @@
 
                 <!--Start Projects Two Counter-->
                 <div class="col-xl-6">
-                    <div class="projects-two__counter clearfix">
+                    <div class="clearfix projects-two__counter">
                         <div class="projects-two__counter-img"
-                            style="background-image: url({{ asset('frontend/assets/images/project/projects-v2-img2.jpg') }});">
+                            style="background-image: url({{ asset('frontend/assets/images/project/6.jpg') }});">
                         </div>
 
                         <div class="projects-two__counter-box">
@@ -566,7 +500,7 @@
     <section class="team-one">
         <div class="container">
 
-            <div class="sec-title style2 text-center">
+            <div class="text-center sec-title style2">
                 <div class="sec-title__tagline center">
                     <div class="img-box"><img
                             src="{{ asset('frontend/assets/images/resources/sec-title-img2.png') }}" alt="#">
@@ -586,9 +520,8 @@
                         </div>
                         <div class="team-one__single-img">
                             <div class="inner">
-                                <img src="{{ asset('frontend/assets/images/team/team-v1-img1.jpg') }}"
-                                    alt="#">
-                                <ul class="social-links clearfix">
+                                <img src="{{ asset('frontend/assets/images/team/1.jpg') }}" alt="#">
+                                <ul class="clearfix social-links">
                                     <li class="share"><a href="#"><span class="icon-share"></span></a>
                                         <ul class="social-links-inner">
                                             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -639,9 +572,8 @@
                         </div>
                         <div class="team-one__single-img">
                             <div class="inner">
-                                <img src="{{ asset('frontend/assets/images/team/team-v1-img2.jpg') }}"
-                                    alt="#">
-                                <ul class="social-links clearfix">
+                                <img src="{{ asset('frontend/assets/images/team/2.jpg') }}" alt="#">
+                                <ul class="clearfix social-links">
                                     <li class="share"><a href="#"><span class="icon-share"></span></a>
                                         <ul class="social-links-inner">
                                             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -692,9 +624,8 @@
                         </div>
                         <div class="team-one__single-img">
                             <div class="inner">
-                                <img src="{{ asset('frontend/assets/images/team/team-v1-img3.jpg') }}"
-                                    alt="#">
-                                <ul class="social-links clearfix">
+                                <img src="{{ asset('frontend/assets/images/team/3.jpg') }}" alt="#">
+                                <ul class="clearfix social-links">
                                     <li class="share"><a href="#"><span class="icon-share"></span></a>
                                         <ul class="social-links-inner">
                                             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -745,9 +676,8 @@
                         </div>
                         <div class="team-one__single-img">
                             <div class="inner">
-                                <img src="{{ asset('frontend/assets/images/team/team-v1-img4.jpg') }}"
-                                    alt="#">
-                                <ul class="social-links clearfix">
+                                <img src="{{ asset('frontend/assets/images/team/4.jpg') }}" alt="#">
+                                <ul class="clearfix social-links">
                                     <li class="share"><a href="#"><span class="icon-share"></span></a>
                                         <ul class="social-links-inner">
                                             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -794,181 +724,10 @@
     </section>
     <!--End Team One-->
 
-    <!--Start Brand Two-->
-    <section class="brand-one brand-one--two">
-        <div class="brand-one--two__bg"
-            style="background-image: url({{ asset('frontend/assets/images/backgrounds/brand-v2-bg.jpg') }});">
-        </div>
-        <div class="auto-container">
-            <div class="thm-swiper__slider swiper-container"
-                data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
-                                    "0": {
-                                        "spaceBetween": 30,
-                                        "slidesPerView": 1
-                                    },
-                                    "375": {
-                                        "spaceBetween": 30,
-                                        "slidesPerView": 1
-                                    },
-                                    "575": {
-                                        "spaceBetween": 30,
-                                        "slidesPerView": 2
-                                    },
-                                    "768": {
-                                        "spaceBetween": 30,
-                                        "slidesPerView": 3
-                                    },
-                                    "992": {
-                                        "spaceBetween": 30,
-                                        "slidesPerView": 4
-                                    },
-                                    "1200": {
-                                        "spaceBetween": 30,
-                                        "slidesPerView": 5
-                                    }
-                                }}'>
-                <div class="swiper-wrapper">
-
-
-                    <div class="swiper-slide">
-                        <img src="{{ asset('frontend/assets/images/brand/brand-v2-img1.png') }}" alt="#">
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="{{ asset('frontend/assets/images/brand/brand-v2-img2.png') }}" alt="#">
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="{{ asset('frontend/assets/images/brand/brand-v2-img3.png') }}" alt="#">
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="{{ asset('frontend/assets/images/brand/brand-v2-img4.png') }}" alt="#">
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="{{ asset('frontend/assets/images/brand/brand-v2-img5.png') }}" alt="#">
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="{{ asset('frontend/assets/images/brand/brand-v2-img1.png') }}" alt="#">
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="{{ asset('frontend/assets/images/brand/brand-v2-img2.png') }}" alt="#">
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="{{ asset('frontend/assets/images/brand/brand-v2-img3.png') }}" alt="#">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End Brand Two -->
-
-    <!--Start Work Process Two -->
-    <section class="work-process-two">
-        <div class="shape1"><img src="{{ asset('frontend/assets/images/shapes/work-process-v2-shape1.jpg') }}"
-                alt="#"></div>
-        <div class="shape2"><img src="{{ asset('frontend/assets/images/shapes/work-process-v2-shape2.png') }}"
-                alt="#"></div>
-        <div class="container">
-            <div class="sec-title style2 text-center">
-                <div class="sec-title__tagline center">
-                    <div class="img-box"><img
-                            src="{{ asset('frontend/assets/images/resources/sec-title-img2.png') }}" alt="#">
-                    </div>
-                    <h6> Work Process</h6>
-                </div>
-                <h2 class="sec-title__title">
-                    Our Easy Work Process</h2>
-            </div>
-
-            <div class="row filter-layout masonary-layout">
-                <!--Start Work Process Two Single-->
-                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="0ms"
-                    data-wow-duration="1000ms">
-                    <div class="work-process-two__single">
-                        <div class="work-process-two__single-icon">
-                            <div class="inner">
-                                <span class="icon-seeding"></span>
-                            </div>
-                            <div class="count-box"></div>
-                        </div>
-
-                        <div class="work-process-two__single-content text-center">
-                            <h3><a href="arbor-management.html">Ready To Plant</a></h3>
-                            <p>Lorem Ipsum is simply to free <br> dumy text the pricing</p>
-                        </div>
-                    </div>
-                </div>
-                <!--End Work Process Two Single-->
-
-                <!--Start Work Process Two Single-->
-                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="100ms"
-                    data-wow-duration="1000ms">
-                    <div class="work-process-two__single style2 mb50">
-                        <div class="work-process-two__single-icon">
-                            <div class="inner">
-                                <span class="icon-gardener"></span>
-                            </div>
-                            <div class="count-box"></div>
-                        </div>
-
-                        <div class="work-process-two__single-content text-center">
-                            <h3><a href="arbor-management.html">Soil Fil Tering</a></h3>
-                            <p>Lorem Ipsum is simply to free <br> dumy text the pricing</p>
-                        </div>
-                    </div>
-                </div>
-                <!--End Work Process Two Single-->
-
-                <!--Start Work Process Two Single-->
-                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="0ms"
-                    data-wow-duration="1000ms">
-                    <div class="work-process-two__single mb25">
-                        <div class="work-process-two__single-icon">
-                            <div class="inner">
-                                <span class="icon-agriculture"></span>
-                            </div>
-                            <div class="count-box"></div>
-                        </div>
-
-                        <div class="work-process-two__single-content text-center">
-                            <h3><a href="arbor-management.html">Garden Design</a></h3>
-                            <p>Lorem Ipsum is simply to free <br> dumy text the pricing</p>
-                        </div>
-                    </div>
-                </div>
-                <!--End Work Process Two Single-->
-
-                <!--Start Work Process Two Single-->
-                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="100ms"
-                    data-wow-duration="1000ms">
-                    <div class="work-process-two__single style2">
-                        <div class="work-process-two__single-icon">
-                            <div class="inner">
-                                <span class="icon-gardening"></span>
-                            </div>
-                            <div class="count-box"></div>
-                        </div>
-
-                        <div class="work-process-two__single-content text-center">
-                            <h3><a href="arbor-management.html">Using Soil Medic</a></h3>
-                            <p>Lorem Ipsum is simply to free <br> dumy text the pricing</p>
-                        </div>
-                    </div>
-                </div>
-                <!--End Work Process Two Single-->
-            </div>
-        </div>
-    </section>
-    <!--End Work Process Two -->
 
 
     <!--Start Pricing Table One-->
-    <section class="pricing-table-one">
+    {{-- <section class="pricing-table-one">
         <div class="shape1 float-bob-y"><img
                 src="{{ asset('frontend/assets/images/shapes/pricing-table-v1-shape1.png') }}" alt="#">
         </div>
@@ -1022,7 +781,7 @@
 
                             <!--Start Pricing Table One Single-->
                             <div class="pricing-table-one__single">
-                                <div class="pricing-table-one__single-left text-center">
+                                <div class="text-center pricing-table-one__single-left">
                                     <div class="top-content">
                                         <div class="title">
                                             <h3>Best Choice</h3>
@@ -1071,7 +830,7 @@
 
                             <!--Start Pricing Table One Single-->
                             <div class="pricing-table-one__single">
-                                <div class="pricing-table-one__single-left text-center">
+                                <div class="text-center pricing-table-one__single-left">
                                     <div class="top-content">
                                         <div class="title">
                                             <h3>Best Choice</h3>
@@ -1120,7 +879,7 @@
 
                             <!--Start Pricing Table One Single-->
                             <div class="pricing-table-one__single">
-                                <div class="pricing-table-one__single-left text-center">
+                                <div class="text-center pricing-table-one__single-left">
                                     <div class="top-content">
                                         <div class="title">
                                             <h3>Best Choice</h3>
@@ -1169,7 +928,7 @@
 
                             <!--Start Pricing Table One Single-->
                             <div class="pricing-table-one__single">
-                                <div class="pricing-table-one__single-left text-center">
+                                <div class="text-center pricing-table-one__single-left">
                                     <div class="top-content">
                                         <div class="title">
                                             <h3>Best Choice</h3>
@@ -1221,7 +980,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--End Pricing Table One-->
 
     <!--Start Testimonilas Two-->
@@ -1230,7 +989,7 @@
             style="background-image: url({{ asset('frontend/assets/images/pattern/testimonilas-v2-pattern.png') }});">
         </div>
         <div class="testimonilas-two__bg"
-            style="background-image: url({{ asset('frontend/assets/images/backgrounds/testimonilas-v2-bg.jpg') }});">
+            style="background-image: url({{ asset('frontend/assets/images/resources/1.jpg') }});">
         </div>
         <div class="shape1 float-bob-y"><img
                 src="{{ asset('frontend/assets/images/shapes/testimonilas-v2-shape1.png') }}" alt="#">
@@ -1510,7 +1269,7 @@
     <!--Start Blog Two-->
     <section class="blog-two">
         <div class="container">
-            <div class="sec-title style2 text-center">
+            <div class="text-center sec-title style2">
                 <div class="sec-title__tagline center">
                     <div class="img-box"><img
                             src="{{ asset('frontend/assets/images/resources/sec-title-img2.png') }}" alt="#">

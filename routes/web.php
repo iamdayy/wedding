@@ -9,7 +9,9 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KategorihomeController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\TreatmentController;
+use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\OrderController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 // ini route frontend
@@ -20,6 +22,9 @@ Route::get('/tentang-kami', [HomeController::class, 'about'])->name('about');
 Route::get('/produk-kami', [HomeController::class, 'produk'])->name('produk');
 Route::get('/artikel', [HomeController::class, 'artikel'])->name('artikel');
 Route::get('/artikel-{slug}', [HomeController::class, 'artikeldetail'])->name('artikeldetail');
+Route::get('/produk-{slug}', [HomeController::class, 'produkdetail'])->name('produkdetail');
+Route::get('order/create', [OrderController::class, 'create'])->name('order.create');
+Route::post('order', [OrderController::class, 'store'])->name('order.store');
 
 
 
@@ -32,10 +37,11 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'dashboard', 'as' => 'admin.
     Route::resource('banner', BannerController::class);
     Route::resource('kategorihome', KategorihomeController::class);
     Route::resource('abouthome', AbouthomeController::class);
-    Route::resource('treatment', TreatmentController::class);
+    Route::resource('produk', ProdukController::class);
     Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
     Route::delete('/contact/{contact}', [ContactController::class, 'destroy'])->name('contact.destroy');
     Route::resource('alamat', AlamatController::class);
+    Route::resource('order', OrderController::class);
 });
 
 

@@ -6,7 +6,7 @@ use App\Models\Abouthome;
 use App\Models\Admin\Artikel;
 use App\Models\Banner;
 use App\Models\Kategorihome;
-use App\Models\Treatment;
+use App\Models\Produk;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -17,11 +17,8 @@ class HomeController extends Controller
             'banner' => Banner::all(),
             'kategorihome' => Kategorihome::all(),
             'abouthome' => Abouthome::paginate(6),
-            'treatment' => Treatment::paginate(4),
+            'produks' => Produk::paginate(4),
             'artikel' => Artikel::orderBy('created_at', 'desc')->paginate(2),
-
-
-
         ]);
     }
 
@@ -35,7 +32,7 @@ class HomeController extends Controller
     public function produk()
     {
         return view('produk', [
-            'artikel' => Artikel::paginate(10),
+            'produks' => Produk::paginate(10),
         ]);
     }
 
@@ -43,6 +40,13 @@ class HomeController extends Controller
     {
         return view('blog', [
             'artikel' => Artikel::paginate(9),
+        ]);
+    }
+    public function produkdetail($id)
+    {
+        return view('produkdetail', [
+            'produk' => Produk::where('id', $id)->get(),
+            'recentProduk' => Produk::orderBy('created_at', 'desc')->take(3)->get() // Ambil 5 artikel terbaru
         ]);
     }
 

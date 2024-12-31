@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gardnma || Responsive HTML 5 Template</title>
+    <title>Wedding Atelier | Wedding & Event Planer</title>
     <!-- Favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180"
         href="{{ asset('frontend/assets/images/favicons/apple-touch-icon.png') }}" />
@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="16x16"
         href="{{ asset('frontend/assets/images/favicons/favicon-16x16.png') }}" />
     <link rel="manifest" href="{{ asset('frontend/assets/images/favicons/site.webmanifest') }}" />
-    <meta name="description" content="Gardnma HTML 5 Template " />
+    <meta name="description" content="Wedding Atelier | Wedding & Event Planer" />
 
     <!-- fonts -->
     <link
@@ -57,43 +57,68 @@
 <body>
 
     <!-- Start Preloader -->
-    {{-- <div class="loader-wrap">
+    <div class="loader-wrap">
         <div class="preloader">
             <div class="preloader-close">x</div>
             <div id="handle-preloader" class="handle-preloader">
                 <div class="animation-preloader">
                     <div class="spinner"></div>
                     <div class="txt-loading">
-                        <span data-text-preloader="a" class="letters-loading">
-                            a
-                        </span>
-                        <span data-text-preloader="r" class="letters-loading">
-                            r
-                        </span>
-                        <span data-text-preloader="k" class="letters-loading">
-                            k
-                        </span>
-                        <span data-text-preloader="w" class="letters-loading">
-                            w
+                        <span data-text-preloader="W" class="letters-loading">
+                            W
                         </span>
                         <span data-text-preloader="e" class="letters-loading">
                             e
                         </span>
-                        <span data-text-preloader="b" class="letters-loading">
-                            b
+                        <span data-text-preloader="d" class="letters-loading">
+                            d
                         </span>
-                        <span data-text-preloader="s" class="letters-loading">
-                            s
+                        <span data-text-preloader="d" class="letters-loading">
+                            d
+                        </span>
+                        <span data-text-preloader="i" class="letters-loading">
+                            i
+                        </span>
+                        <span data-text-preloader="n" class="letters-loading">
+                            n
+                        </span>
+                        <span data-text-preloader="g" class="letters-loading">
+                            g
+                        </span>
+                        <span data-text-preloader=" " class="letters-loading">
+
+                        </span>
+                        <span data-text-preloader="A" class="letters-loading">
+                            A
+                        </span>
+                        <span data-text-preloader="t" class="letters-loading">
+                            t
+                        </span>
+                        <span data-text-preloader="e" class="letters-loading">
+                            e
+                        </span>
+                        <span data-text-preloader="l" class="letters-loading">
+                            l
+                        </span>
+                        <span data-text-preloader="i" class="letters-loading">
+                            i
+                        </span>
+                        <span data-text-preloader="e" class="letters-loading">
+                            e
+                        </span>
+                        <span data-text-preloader="r" class="letters-loading">
+                            r
                         </span>
                     </div>
                 </div>
             </div>
         </div>
-    </div> --}}
+    </div>
     <!-- End Preloader -->
 
     @php
         $alamat = \App\Models\Alamat::all();
+        $produks = \App\Models\Produk::paginate(6);
 
     @endphp
 
@@ -182,14 +207,14 @@
                 </div>
                 <div class="main-header-one__bottom-inner">
                     <nav class="main-menu main-menu-one">
-                        <div class="main-menu__wrapper clearfix">
+                        <div class="clearfix main-menu__wrapper">
                             <div class="auto-container">
                                 <div class="main-menu__wrapper-inner">
                                     <div class="main-header-one__bottom-left">
                                         <div class="logo-box-one">
                                             <a href="{{ route('home') }}">
                                                 <img src="{{ asset('frontend/assets/images/resources/logo-2.png') }}"
-                                                    alt="Awesome Logo" title="">
+                                                    alt="Awesome Logo" title="" height="50px" />
                                             </a>
                                         </div>
                                     </div>
@@ -226,7 +251,7 @@
 
                                                 </li>
                                                 <li @if (Route::current()->getName() == 'contact.create') class="dropdown current" @endif>
-                                                    <a href="{{ route('contact.create') }}">Hubungi Kami <span
+                                                    <a href="{{ route('order.create') }}">Hubungi Kami <span
                                                             class="line"></span></a>
                                                 </li>
                                             </ul>
@@ -240,7 +265,7 @@
                                             </a>
                                         </div>
                                         <div class="main-header-one__bottom-right-btn">
-                                            <a href="contact.html">Book Appointment</a>
+                                            <a href="{{ route('order.create') }}">Book Appointment</a>
                                         </div>
                                     </div>
 
@@ -313,11 +338,11 @@
                                             </div>
                                             <div class="footer-one__right-single-services">
                                                 <ul class="footer-one__right-single-list">
-                                                    <li><a href="services.html">Lawn Moving</a></li>
-                                                    <li><a href="services.html">Hedge Cutting</a></li>
-                                                    <li><a href="services.html">Flower Planting</a></li>
-                                                    <li><a href="services.html">Working Process</a></li>
-                                                    <li><a href="services.html">Garden Restoration</a></li>
+                                                    @foreach ($produks as $produk)
+                                                        <li><a
+                                                                href="{{ route('produkdetail', $produk->id) }}">{{ $produk->judul }}</a>
+                                                        </li>
+                                                    @endforeach
                                                 </ul>
                                             </div>
                                         </div>

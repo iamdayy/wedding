@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Treatment;
+use App\Models\Produk;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
-class TreatmentController extends Controller
+class ProdukController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('admin.treatment.index', [
-            'treatment' => Treatment::paginate(10),
+        return view('admin.produk.index', [
+            'produk' => Produk::paginate(10),
         ]);
     }
 
@@ -23,7 +23,7 @@ class TreatmentController extends Controller
      */
     public function create()
     {
-        return view('admin.treatment.create');
+        return view('admin.produk.create');
     }
 
     /**
@@ -31,21 +31,22 @@ class TreatmentController extends Controller
      */
     public function store(Request $request)
     {
-        $treatment = Treatment::create([
+        $produk = Produk::create([
             'judul' => $request->judul,
             'deskripsi' => $request->deskripsi,
-            'image' => $request->file('image')->store('images/treatment', 'public'),
+            'image' => $request->file('image')->store('images/produk', 'public'),
             'kategori'  => $request->kategori,
+            'harga' => $request->harga,
 
         ]);
 
-        return redirect()->route('admin.treatment.index');
+        return redirect()->route('admin.produk.index');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Treatment $treatment)
+    public function show(Produk $produk)
     {
         //
     }
@@ -53,36 +54,36 @@ class TreatmentController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Treatment $treatment)
+    public function edit(Produk $produk)
     {
-        return view('admin.treatment.edit', [
-            'treatment' => $treatment
+        return view('admin.produk.edit', [
+            'produk' => $produk
         ]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Treatment $treatment)
+    public function update(Request $request, Produk $produk)
     {
-        $treatment->update([
+        $produk->update([
             'judul' => $request->judul,
             'deskripsi' => $request->deskripsi,
-            'image' => $request->file('image')->store('images/treatment', 'public'),
+            'image' => $request->file('image')->store('images/produk', 'public'),
             'kategori'  => $request->kategori,
         ]);
 
-        return redirect()->route('admin.treatment.index');
+        return redirect()->route('admin.produk.index');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Treatment $treatment)
+    public function destroy(Produk $produk)
     {
-        Storage::delete($treatment->image);
-        $treatment->delete();
+        Storage::delete($produk->image);
+        $produk->delete();
 
-        return redirect()->route('admin.treatment.index');
+        return redirect()->route('admin.produk.index');
     }
 }

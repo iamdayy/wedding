@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Treatment extends Model
+class Produk extends Model
 {
     use HasFactory;
 
@@ -14,10 +14,15 @@ class Treatment extends Model
         'kategori',
         'image',
         'deskripsi',
+        'harga',
 
     ];
     public function getPictureAttribute()
     {
         return asset('storage/' . $this->image);
+    }
+    public function orders()
+    {
+        return $this->hasMany(Order::class);
     }
 }
