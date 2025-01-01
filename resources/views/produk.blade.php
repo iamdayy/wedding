@@ -3,7 +3,7 @@
     <!--Start Page Header-->
     <section class="page-header">
         <div class="page-header__bg"
-            style="background-image: url({{ asset('frontend/assets/images/backgrounds/page-header-bg.jpg') }})">
+            style="background-image: url({{ asset('frontend/assets/images/backgrounds/1.jpg') }})">
         </div>
         <div class="shape1">
             <img src="{{ asset('frontend/assets/images/shapes/page-header-shape1.png') }}" alt="#">
@@ -23,7 +23,7 @@
     <!--End Page Header-->
 
     <!--Start Features One -->
-    <section class="features-one">
+    {{-- <section class="features-one">
         <div class="features-one__bg"
             style="background-image: url({{ asset('frontend/assets/images/backgrounds/features-v1-bg.png') }});">
         </div>
@@ -127,7 +127,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--End Features One -->
 
     <!--Start Services Two -->
@@ -187,7 +187,7 @@
     <!--End Services Two -->
 
     <!--Start Work Process Two -->
-    <section class="work-process-two">
+    {{-- <section class="work-process-two">
         <div class="shape1"><img src="{{ asset('frontend/assets/images/shapes/work-process-v2-shape1.jpg') }}"
                 alt="#"></div>
         <div class="shape2"><img src="{{ asset('frontend/assets/images/shapes/work-process-v2-shape2.png') }}"
@@ -206,8 +206,7 @@
 
             <div class="row filter-layout masonary-layout">
                 <!--Start Work Process Two Single-->
-                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="0ms"
-                    data-wow-duration="1000ms">
+                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1000ms">
                     <div class="work-process-two__single">
                         <div class="work-process-two__single-icon">
                             <div class="inner">
@@ -244,8 +243,7 @@
                 <!--End Work Process Two Single-->
 
                 <!--Start Work Process Two Single-->
-                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="0ms"
-                    data-wow-duration="1000ms">
+                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1000ms">
                     <div class="work-process-two__single mb25">
                         <div class="work-process-two__single-icon">
                             <div class="inner">
@@ -282,7 +280,7 @@
                 <!--End Work Process Two Single-->
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--End Work Process Two -->
 
 </x-home>

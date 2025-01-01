@@ -251,7 +251,7 @@
 
                                                 </li>
                                                 <li @if (Route::current()->getName() == 'contact.create') class="dropdown current" @endif>
-                                                    <a href="{{ route('order.create') }}">Hubungi Kami <span
+                                                    <a href="{{ route('contact.create') }}">Hubungi Kami <span
                                                             class="line"></span></a>
                                                 </li>
                                             </ul>

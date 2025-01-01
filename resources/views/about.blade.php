@@ -3,7 +3,7 @@
     <!--Start Page Header-->
     <section class="page-header">
         <div class="page-header__bg"
-            style="background-image: url({{ asset('frontend/assets/images/backgrounds/page-header-bg.jpg') }})">
+            style="background-image: url({{ asset('frontend/assets/images/backgrounds/1.jpg') }})">
         </div>
         <div class="shape1">
             <img src="{{ asset('frontend/assets/images/shapes/page-header-shape1.png') }}" alt="#">
@@ -28,7 +28,7 @@
             style="background-image: url({{ asset('frontend/assets/images/backgrounds/features-v2-bg.png') }});">
         </div>
         <div class="auto-container">
-            <div class="sec-title-three text-center">
+            <div class="text-center sec-title-three">
                 <div class="sec-title-three__tagline">
                     <h6>What we offer</h6>
                 </div>
@@ -43,23 +43,19 @@
                                 01
                             </div>
                             <div class="inner">
-                                <div class="icon-box">
-                                    <span class="icon-gardening-2"></span>
-                                </div>
-
                                 <div class="content-box">
                                     <div class="title">
-                                        <h2><a href="arbor-management.html">Garden Renovation</a></h2>
+                                        <h2><a href="arbor-management.html">Perencanaan dan <br /> Persiapan</a></h2>
                                     </div>
-                                    <p>Prevailed mr tolerably discourse arance <br> estimable applauded to kiyh so.
+                                    <p>Kami membantu anda dalam merencanakan dan mempersiapkan hari pernikahan yang
+                                        sempurna.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="features-two__single-img">
-                            <img src="{{ asset('frontend/assets/images/resources/features-v2-img1.jpg') }}"
-                                alt="#">
+                            <img src="{{ asset('frontend/assets/images/resources/2.jpg') }}" alt="#">
                         </div>
                     </div>
                 </div>
@@ -73,23 +69,19 @@
                                 02
                             </div>
                             <div class="inner">
-                                <div class="icon-box">
-                                    <span class="icon-chair"></span>
-                                </div>
-
                                 <div class="content-box">
                                     <div class="title">
-                                        <h2><a href="arbor-management.html">Landscape Install</a></h2>
+                                        <h2><a href="arbor-management.html">Pelaksanaan Hari <br /> Pernikahan</a></h2>
                                     </div>
-                                    <p>Prevailed mr tolerably discourse arance <br> estimable applauded to kiyh so.
+                                    <p>Kami akan konsisten membantu anda dalam melaksanakan hari pernikahan yang
+                                        sempurna sesuai dengan konsep awal.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="features-two__single-img">
-                            <img src="{{ asset('frontend/assets/images/resources/features-v2-img2.jpg') }}"
-                                alt="#">
+                            <img src="{{ asset('frontend/assets/images/resources/3.jpg') }}" alt="#">
                         </div>
                     </div>
                 </div>
@@ -103,23 +95,19 @@
                                 03
                             </div>
                             <div class="inner">
-                                <div class="icon-box">
-                                    <span class="icon-pruning-shears"></span>
-                                </div>
-
                                 <div class="content-box">
                                     <div class="title">
-                                        <h2><a href="arbor-management.html">Garden Clearance</a></h2>
+                                        <h2><a href="arbor-management.html">Pasca Pernikahan</a></h2>
                                     </div>
-                                    <p>Prevailed mr tolerably discourse arance <br> estimable applauded to kiyh so.
+                                    <p>Kami akan melakukan evaluasi, menyelesaikan pembayaran vendor, dan memberikan
+                                        laporan. Setelahnya, anda dapat menikmati bulan madu yang menyenangkan.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="features-two__single-img">
-                            <img src="{{ asset('frontend/assets/images/resources/features-v2-img3.jpg') }}"
-                                alt="#">
+                            <img src="{{ asset('frontend/assets/images/resources/1.jpg') }}" alt="#">
                         </div>
                     </div>
                 </div>
@@ -132,9 +120,9 @@
 
     <!--Start About Three -->
     <section class="about-three">
-        <div class="about-three__bg"
+        {{-- <div class="about-three__bg"
             style="background-image: url({{ asset('frontend/assets/images/backgrounds/about-v3-bg.png') }});">
-        </div>
+        </div> --}}
         <div class="container">
             <div class="row">
 
@@ -161,11 +149,8 @@
                 <!--Start About Three Img-->
                 <div class="col-xl-4 col-lg-5 col-md-7">
                     <div class="about-three__img">
-                        <div class="about-three__img-shape1">
-                            <img src="{{ asset('frontend/assets/images/shapes/about-v3-shape1.png') }}" alt="#">
-                        </div>
                         <div class="inner">
-                            <img src="{{ asset('frontend/assets/images/about/about-v3-img1.jpg') }}" alt="#">
+                            <img src="{{ asset('frontend/assets/images/about/4.jpg') }}" alt="#">
                         </div>
                     </div>
                 </div>
@@ -178,7 +163,7 @@
                             <div class="sec-title-three__tagline">
                                 <h6>About company</h6>
                             </div>
-                            <h2 class="sec-title-three__title">We want help you <br> to grow planting.</h2>
+                            <h2 class="sec-title-three__title">Kami Mewujudkan <br /> Mimpi Pernikahan Anda</h2>
                         </div>
 
                         <div class="about-three__content-text1">
@@ -193,11 +178,11 @@
                                     <div class="single-box">
                                         <ul>
                                             <li>
-                                                <h4> <span class="icon-tick"></span>Watering & Irrigation</h4>
+                                                <h4> <span class="icon-tick"></span>Desain dan Dekorasi</h4>
                                             </li>
 
                                             <li>
-                                                <h4> <span class="icon-tick"></span>Plant Stands & Trays</h4>
+                                                <h4> <span class="icon-tick"></span>Penataan Acara</h4>
                                             </li>
                                         </ul>
                                     </div>
@@ -207,11 +192,11 @@
                                     <div class="single-box">
                                         <ul>
                                             <li>
-                                                <h4> <span class="icon-tick"></span>Lawn Maintenance</h4>
+                                                <h4> <span class="icon-tick"></span>Konsultasi Anggaran</h4>
                                             </li>
 
                                             <li>
-                                                <h4> <span class="icon-tick"></span>Yard & Garden Decor</h4>
+                                                <h4> <span class="icon-tick"></span>Pengurusan Perizinan</h4>
                                             </li>
                                         </ul>
                                     </div>
@@ -230,15 +215,13 @@
 
     <!--Start Services Three -->
     <section class="services-three">
-        <div class="shape2  wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms"><img
-                class="float-bob-y" src="{{ asset('frontend/assets/images/shapes/services-v3-shape1.png') }}"
-                alt="#"></div>
-        <div class="shape3 wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms"><img
-                class="float-bob-y" src="{{ asset('frontend/assets/images/shapes/services-v3-shape2.png') }}"
-                alt="#">
+        <div class="shape2 wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms"><img class="float-bob-y"
+                src="{{ asset('frontend/assets/images/shapes/services-v3-shape1.png') }}" alt="#"></div>
+        <div class="shape3 wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms"><img class="float-bob-y"
+                src="{{ asset('frontend/assets/images/shapes/services-v3-shape2.png') }}" alt="#">
         </div>
         <div class="services-three__bg"
-            style="background-image: url({{ asset('frontend/assets/images/backgrounds/services-v3-bg.jpg') }});">
+            style="background-image: url({{ asset('frontend/assets/images/backgrounds/services-v2-bg.jpg') }});">
         </div>
         <div class="container">
             <div class="services-three__top">
@@ -262,23 +245,13 @@
                 <div class="col-xl-3 col-lg-6 col-md-6 wow animated fadeInUp" data-wow-delay="0.1s">
                     <div class="services-three__single">
                         <div class="shape1"></div>
-                        <div class="services-three__single-icon">
-                            <div class="inner">
-                                <span class="icon-gardener-1"></span>
-                            </div>
-                            <div class="icon">
-                                <span>+</span>
-                            </div>
-                        </div>
 
                         <div class="services-three__single-content">
                             <div class="title">
-                                <h2><a href="arbor-management.html">Garden Landscaping</a></h2>
+                                <h2><a href="arbor-management.html">Desain dan Dekorasi</a></h2>
                             </div>
-                            <p>The laying out andin in care of
-                                plot of ground devoted partally
-                                lokally or wholly avail Natural at
-                                element present garden...</p>
+                            <p>Menciptakan suasana pernikahan yang indah dan berkesan sesuai dengan tema yang Anda
+                                inginkan.</p>
 
                             <div class="bottom-box">
                                 <div class="btn-box">
@@ -298,24 +271,13 @@
                 <div class="col-xl-3 col-lg-6 col-md-6 wow animated fadeInUp" data-wow-delay="0.2s">
                     <div class="services-three__single">
                         <div class="shape1"></div>
-                        <div class="services-three__single-icon">
-                            <div class="inner">
-                                <span class="icon-shovels"></span>
-                            </div>
-                            <div class="icon">
-                                <span>+</span>
-                            </div>
-                        </div>
 
                         <div class="services-three__single-content">
                             <div class="title">
-                                <h2><a href="arbor-management.html">Soil Marking</a></h2>
+                                <h2><a href="arbor-management.html">Penataan Acara</a></h2>
                             </div>
-                            <p>The laying out andin in care of
-                                plot of ground devoted partally
-                                lokally or wholly avail Natural at
-                                element present garden...</p>
-
+                            <p>Mengatur jalannya acara pernikahan dengan lancar dan teratur.</p>
+                            <br />
                             <div class="bottom-box">
                                 <div class="btn-box">
                                     <a href="arbor-management.html">Read More</a>
@@ -334,24 +296,13 @@
                 <div class="col-xl-3 col-lg-6 col-md-6 wow animated fadeInUp" data-wow-delay="0.3s">
                     <div class="services-three__single">
                         <div class="shape1"></div>
-                        <div class="services-three__single-icon">
-                            <div class="inner">
-                                <span class="icon-agriculture"></span>
-                            </div>
-                            <div class="icon">
-                                <span>+</span>
-                            </div>
-                        </div>
 
                         <div class="services-three__single-content">
                             <div class="title">
-                                <h2><a href="arbor-management.html">Patios & Courtyards</a></h2>
+                                <h2><a href="arbor-management.html">Konsultasi Anggaran</a></h2>
                             </div>
-                            <p>The laying out andin in care of
-                                plot of ground devoted partally
-                                lokally or wholly avail Natural at
-                                element present garden...</p>
-
+                            <p>Membantu Anda menyusun anggaran pernikahan yang realistis dan efisien.</p>
+                            <br />
                             <div class="bottom-box">
                                 <div class="btn-box">
                                     <a href="arbor-management.html">Read More</a>
@@ -370,24 +321,12 @@
                 <div class="col-xl-3 col-lg-6 col-md-6 wow animated fadeInUp" data-wow-delay="0.4s">
                     <div class="services-three__single">
                         <div class="shape1"></div>
-                        <div class="services-three__single-icon">
-                            <div class="inner">
-                                <span class="icon-gardening"></span>
-                            </div>
-                            <div class="icon">
-                                <span>+</span>
-                            </div>
-                        </div>
 
                         <div class="services-three__single-content">
                             <div class="title">
-                                <h2><a href="arbor-management.html">Commercial Planting</a></h2>
+                                <h2><a href="arbor-management.html">Pengurusan Perizinan</a></h2>
                             </div>
-                            <p>The laying out andin in care of
-                                plot of ground devoted partally
-                                lokally or wholly avail Natural at
-                                element present garden...</p>
-
+                            <p>Membantu mengurus semua perizinan yang dibutuhkan untuk pernikahan Anda.</p>
                             <div class="bottom-box">
                                 <div class="btn-box">
                                     <a href="arbor-management.html">Read More</a>
@@ -411,12 +350,9 @@
         <div class="auto-container">
             <div class="counter-one__inner">
                 <div class="container">
-                    <ul class="counter-one__box">
+                    <ul class="counter-one__box" style="display: flex; justify-content: center;">
                         <li class="counter-one__single">
                             <div class="counter-one__single-inner">
-                                <div class="icon-box">
-                                    <span class="icon-shovels"></span>
-                                </div>
 
                                 <div class="content-box">
                                     <h2><span class="odometer" data-count="191">00</span> <span
@@ -428,9 +364,6 @@
 
                         <li class="counter-one__single">
                             <div class="counter-one__single-inner">
-                                <div class="icon-box">
-                                    <span class="icon-agriculture"></span>
-                                </div>
 
                                 <div class="content-box">
                                     <h2><span class="odometer" data-count="2">00</span>k</h2>
@@ -441,9 +374,6 @@
 
                         <li class="counter-one__single">
                             <div class="counter-one__single-inner">
-                                <div class="icon-box">
-                                    <span class="icon-gardener-1"></span>
-                                </div>
 
                                 <div class="content-box">
                                     <h2><span class="odometer" data-count="37">00</span> <span
@@ -456,9 +386,6 @@
 
                         <li class="counter-one__single">
                             <div class="counter-one__single-inner">
-                                <div class="icon-box">
-                                    <span class="icon-gardener-1"></span>
-                                </div>
 
                                 <div class="content-box">
                                     <h2><span class="odometer" data-count="9">00</span> <span class="plus">+</span>
@@ -537,7 +464,7 @@
                                     <div class="swiper-slide">
                                         <div class="testimonials-three__img">
                                             <div class="inner">
-                                                <img src="{{ asset('frontend/assets/images/testimonial/testimonial-v3-img1.jpg') }}"
+                                                <img src="{{ asset('frontend/assets/images/testimonial/1.jpg') }}"
                                                     alt="#">
                                             </div>
                                         </div>
@@ -546,7 +473,7 @@
                                     <div class="swiper-slide">
                                         <div class="testimonials-three__img">
                                             <div class="inner">
-                                                <img src="{{ asset('frontend/assets/images/testimonial/testimonial-v3-img2.jpg') }}"
+                                                <img src="{{ asset('frontend/assets/images/testimonial/2.jpg') }}"
                                                     alt="#">
                                             </div>
                                         </div>
@@ -555,7 +482,7 @@
                                     <div class="swiper-slide">
                                         <div class="testimonials-three__img">
                                             <div class="inner">
-                                                <img src="{{ asset('frontend/assets/images/testimonial/testimonial-v3-img3.jpg') }}"
+                                                <img src="{{ asset('frontend/assets/images/testimonial/3.png') }}"
                                                     alt="#">
                                             </div>
                                         </div>
@@ -564,7 +491,7 @@
                                     <div class="swiper-slide">
                                         <div class="testimonials-three__img">
                                             <div class="inner">
-                                                <img src="{{ asset('frontend/assets/images/testimonial/testimonial-v3-img4.jpg') }}"
+                                                <img src="{{ asset('frontend/assets/images/testimonial/4.png') }}"
                                                     alt="#">
                                             </div>
                                         </div>
@@ -621,7 +548,7 @@
                                                             <span class="icon-quote-1"></span>
                                                         </div>
                                                         <div class="inner">
-                                                            <img src="{{ asset('frontend/assets/images/testimonial/testimonial-v3-img7.jpg') }}"
+                                                            <img src="{{ asset('frontend/assets/images/testimonial/5.jpg') }}"
                                                                 alt="#">
                                                         </div>
                                                     </div>
@@ -676,7 +603,7 @@
                                                             <span class="icon-quote-1"></span>
                                                         </div>
                                                         <div class="inner">
-                                                            <img src="{{ asset('frontend/assets/images/testimonial/testimonial-v3-img8.jpg') }}"
+                                                            <img src="{{ asset('frontend/assets/images/testimonial/5.jpg') }}"
                                                                 alt="#">
                                                         </div>
                                                     </div>
@@ -731,7 +658,7 @@
                                                             <span class="icon-quote-1"></span>
                                                         </div>
                                                         <div class="inner">
-                                                            <img src="{{ asset('frontend/assets/images/testimonial/testimonial-v3-img9.jpg') }}"
+                                                            <img src="{{ asset('frontend/assets/images/testimonial/5.jpg') }}"
                                                                 alt="#">
                                                         </div>
                                                     </div>
@@ -786,7 +713,7 @@
                                                             <span class="icon-quote-1"></span>
                                                         </div>
                                                         <div class="inner">
-                                                            <img src="{{ asset('frontend/assets/images/testimonial/testimonial-v3-img6.jpg') }}"
+                                                            <img src="{{ asset('frontend/assets/images/testimonial/5.jpg') }}"
                                                                 alt="#">
                                                         </div>
                                                     </div>
@@ -816,7 +743,7 @@
     <!--Start Team Two -->
     <section class="team-two team-two--about">
         <div class="container">
-            <div class="sec-title-three text-center">
+            <div class="text-center sec-title-three">
                 <div class="sec-title-three__tagline">
                     <h6>Our Team</h6>
                 </div>
@@ -828,8 +755,8 @@
                     data-wow-duration="1000ms">
                     <div class="team-two__single">
                         <div class="team-two__single-img">
-                            <img src="{{ asset('frontend/assets/images/team/team-v2-img1.jpg') }}" alt="#">
-                            <ul class="social-links clearfix">
+                            <img src="{{ asset('frontend/assets/images/team/5.jpg') }}" alt="#">
+                            <ul class="clearfix social-links">
                                 <li class="share"><a href="#"><span class="icon-share"></span></a>
                                     <ul class="social-links-inner">
                                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -853,8 +780,8 @@
                     data-wow-duration="1000ms">
                     <div class="team-two__single">
                         <div class="team-two__single-img">
-                            <img src="{{ asset('frontend/assets/images/team/team-v2-img2.jpg') }}" alt="#">
-                            <ul class="social-links clearfix">
+                            <img src="{{ asset('frontend/assets/images/team/5.jpg') }}" alt="#">
+                            <ul class="clearfix social-links">
                                 <li class="share"><a href="#"><span class="icon-share"></span></a>
                                     <ul class="social-links-inner">
                                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -879,8 +806,8 @@
                     data-wow-duration="1000ms">
                     <div class="team-two__single">
                         <div class="team-two__single-img">
-                            <img src="{{ asset('frontend/assets/images/team/team-v2-img3.jpg') }}" alt="#">
-                            <ul class="social-links clearfix">
+                            <img src="{{ asset('frontend/assets/images/team/5.jpg') }}" alt="#">
+                            <ul class="clearfix social-links">
                                 <li class="share"><a href="#"><span class="icon-share"></span></a>
                                     <ul class="social-links-inner">
                                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -905,8 +832,8 @@
                     data-wow-duration="1000ms">
                     <div class="team-two__single">
                         <div class="team-two__single-img">
-                            <img src="{{ asset('frontend/assets/images/team/team-v2-img4.jpg') }}" alt="#">
-                            <ul class="social-links clearfix">
+                            <img src="{{ asset('frontend/assets/images/team/5.jpg') }}" alt="#">
+                            <ul class="clearfix social-links">
                                 <li class="share"><a href="#"><span class="icon-share"></span></a>
                                     <ul class="social-links-inner">
                                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
