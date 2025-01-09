@@ -15,7 +15,6 @@ class Order extends Model
         'alamat',
         'produk_id',
         'jumlah',
-        'total',
         'status',
     ];
     public function produk()

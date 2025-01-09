@@ -1,6 +1,6 @@
 <aside class="z-20 flex-shrink-0 hidden w-64 overflow-y-auto bg-white dark:bg-gray-800 md:block">
     <div class="py-4 text-gray-500 dark:text-gray-400">
-        <a class="text-lg font-bold text-gray-800 dark:text-gray-200" href="#">
+        <a class="text-lg font-bold text-gray-800 dark:text-gray-200" href="{{ route('home') }}">
             <img src="{{ asset('frontend/assets/images/resources/logo-1.png') }}" alt="Awesome Logo" title=""
                 height="50px" class="filter" />
         </a>
@@ -37,6 +37,24 @@
                     </svg>
 
                     <span class="ml-4">Produk</span>
+                </a>
+            </li>
+            <li class="relative px-6 py-3">
+                @if (request()->routeIs('admin.contact.index'))
+                    <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                        aria-hidden="true"></span>
+                @endif
+                <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                    href="{{ route('admin.contact.index') }}">
+                    <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" stroke="currentColor">
+                        <path
+                            d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
+                        <path
+                            d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                    </svg>
+
+                    <span class="ml-4">Kontak</span>
                 </a>
             </li>
             <li class="relative px-6 py-3">

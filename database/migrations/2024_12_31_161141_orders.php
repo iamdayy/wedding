@@ -17,10 +17,10 @@ return new class extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phone');
-            $table->string('address');
-            $table->unsignedBigInteger('product_id');
-            $table->integer('quantity');
-            $table->integer('total');
+            $table->string('alamat');
+            $table->unsignedBigInteger('produk_id');
+            $table->integer('jumlah');
+            $table->string('status');
             $table->timestamps();
         });
     }

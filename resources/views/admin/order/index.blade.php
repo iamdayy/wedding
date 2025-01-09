@@ -6,6 +6,14 @@
                 Daftar order
             </h2>
 
+            <!-- Cards -->
+            <div class="flex flex-col flex-wrap mb-4 space-y-4 md:flex-row md:items-end md:space-x-4">
+                <a href="{{ route('admin.order.create') }}"
+                    class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+                    Buat Baru
+                </a>
+            </div>
+
             <!-- New Table -->
             <div class="w-full overflow-hidden rounded-lg shadow-xs">
 
@@ -15,9 +23,12 @@
                             <tr
                                 class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                                 <th class="px-4 py-3">ID</th>
-                                <th class="px-4 py-3">Judul</th>
-                                <th class="px-4 py-3">Gambar</th>
-                                <th class="px-4 py-3">Tanggal</th>
+                                <th class="px-4 py-3">Nama Kustomer</th>
+                                <th class="px-4 py-3">Email</th>
+                                <th class="px-4 py-3">No. Telp</th>
+                                <th class="px-4 py-3">Produk</th>
+                                <th class="px-4 py-3">Jumlah</th>
+                                <th class="px-4 py-3">Status</th>
                                 <th class="px-4 py-3">Action</th>
                             </tr>
                         </thead>
@@ -28,13 +39,22 @@
                                         {{ $i + 1 }}
                                     </td>
                                     <td class="px-4 py-3 text-sm">
-                                        {{ $item->judul }}
-                                    </td>
-                                    <td class="px-4 py-3 text-xs">
-                                        <img src="{{ $item->picture }}" alt="" width="100px" height="100px">
+                                        {{ $item->name }}
                                     </td>
                                     <td class="px-4 py-3 text-sm">
-                                        {{ $item->created_at->format('d-m-Y') }}
+                                        {{ $item->email }}
+                                    </td>
+                                    <td class="px-4 py-3 text-sm">
+                                        {{ $item->phone }}
+                                    </td>
+                                    <td class="px-4 py-3 text-sm">
+                                        {{ $item->produk->judul }}
+                                    </td>
+                                    <td class="px-4 py-3 text-sm">
+                                        {{ $item->jumlah }}
+                                    </td>
+                                    <td class="px-4 py-3 text-sm">
+                                        {{ $item->status }}
                                     </td>
 
                                     <td class="px-4 py-3">

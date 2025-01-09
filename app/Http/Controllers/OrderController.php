@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Order;
-use App\Http\Requests\StoreOrderRequest;
-use App\Http\Requests\UpdateOrderRequest;
+use App\Models\Produk;
+use Illuminate\Http\Request;
 
 class OrderController extends Controller
 {
@@ -24,25 +24,27 @@ class OrderController extends Controller
     public function create()
     {
         //
-        return view('order.create');
+        $produks = Produk::all();
+        return view('admin.order.create', compact('produks'));
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreOrderRequest $request)
+    public function store(Request $request)
     {
         //
-        Order::create($request->validated(
-            'name',
-            'email',
-            'phone',
-            'address',
-            'product_id',
-            'quantity',
-            'total'
-        ));
-        return redirect()->route('admin.order.index');
+        Order::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'alamat' => $request->alamat,
+            'produk_id' => $request->produk_id,
+            'jumlah' => $request->jumlah,
+            'total' => $request->total,
+            'status' => $request->status,
+        ]);
+        return redirect()->back();
     }
 
     /**

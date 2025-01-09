@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use App\Models\Produk;
 
 class ContactController extends Controller
 {
@@ -22,8 +23,10 @@ class ContactController extends Controller
      */
     public function create()
     {
+        $products = Produk::all();
         return view('contact', [
             'contact' => Contact::all(),
+            'products' => $products,
         ]);
     }
 

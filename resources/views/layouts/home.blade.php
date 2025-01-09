@@ -265,7 +265,7 @@
                                             </a>
                                         </div>
                                         <div class="main-header-one__bottom-right-btn">
-                                            <a href="{{ route('order.create') }}">Book Appointment</a>
+                                            <a href="{{ route('contact.create') }}">Book Appointment</a>
                                         </div>
                                     </div>
 

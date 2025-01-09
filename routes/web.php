@@ -23,8 +23,6 @@ Route::get('/produk-kami', [HomeController::class, 'produk'])->name('produk');
 Route::get('/artikel', [HomeController::class, 'artikel'])->name('artikel');
 Route::get('/artikel-{slug}', [HomeController::class, 'artikeldetail'])->name('artikeldetail');
 Route::get('/produk-{slug}', [HomeController::class, 'produkdetail'])->name('produkdetail');
-Route::get('order/create', [OrderController::class, 'create'])->name('order.create');
-Route::post('order', [OrderController::class, 'store'])->name('order.store');
 
 
 
